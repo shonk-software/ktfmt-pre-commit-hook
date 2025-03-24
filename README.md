@@ -12,7 +12,7 @@ This commit hook requires Python `>=3.8`.
 Add the following lines to your `.pre-commit-config.yaml`.
 
 ```yaml
-- repo: https://github.com/corewar-teamprojekt/ktfmt-pre-commit-hook
+- repo: https://github.com/shonk-software/ktfmt-pre-commit-hook
   rev: 0.8.0
   hooks:
   - id: ktfmt
@@ -26,7 +26,6 @@ We use it with the following options:
   hooks:
   - id: ktfmt
     args: [--dry-run, --kotlinlang-style]
-    stages: [commit]
 ```
 
 With `--dry-run` the hook doesn't automatically format the files on commit.  
